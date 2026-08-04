@@ -169,21 +169,11 @@
 
 @layer utilities {
   .portfolio-scroll {
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary) var(--secondary);
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
   }
 
   .portfolio-scroll::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .portfolio-scroll::-webkit-scrollbar-track {
-    background: var(--secondary);
-    border-radius: var(--radius);
-  }
-
-  .portfolio-scroll::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border-radius: var(--radius);
+    display: none; 
   }
 }
