@@ -42,7 +42,7 @@ const testimonials = [
     name: 'Nom du responsable 4',
     role: 'Responsable digital 4',
     initials: 'NR',
-  },
+  }
 ]
 
 
@@ -81,7 +81,7 @@ function TestimonialCard({
         duration: 0.45,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="flex w-full sm:w-[48%] md:w-[31.5%] shrink-0 min-h-80 flex-col rounded-2xl border border-border bg-card p-6 md:p-7"
+      className="flex w-full sm:w-[48%] md:w-[31%] shrink-0 min-h-80 flex-col rounded-2xl border border-border bg-card p-6 md:p-7 snap-start"
     >
       <Quote
         className="h-8 w-8 text-primary"
@@ -176,7 +176,7 @@ export function Testimonials() {
 
         <div
           ref={trackRef}
-          className="portfolio-scroll mt-12 flex overflow-x-auto gap-6 pb-4"
+          className="w-full portfolio-scroll mt-12 flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory"
         >
 
           {testimonials.map((testimonial, index) => (
