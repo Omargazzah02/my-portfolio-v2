@@ -20,9 +20,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a href="#" className="flex items-center gap-2 font-mono text-sm font-semibold">
-          <span className="grid h-8 w-8 place-items-center rounded-md bg-primary text-primary-foreground">
-            OG
-          </span>
+            <img src="/logo-site.png" alt="Omar Gazzah" className="h-10 w-10 rounded-full" />
+         
           <span className="hidden sm:inline">Omar Gazzah</span>
         </a>
 
