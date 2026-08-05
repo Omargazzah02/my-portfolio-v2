@@ -80,8 +80,8 @@ const allProjects = [
     badge: 'Académique',
     school: 'École Pluridisciplinaire',
   },
-  
-    {
+
+  {
     id: 7,
     category: 'academique',
     title: 'Application Mobile de Fitness',
@@ -93,8 +93,8 @@ const allProjects = [
     badge: 'Académique',
     school: 'École Pluridisciplinaire',
   },
-  
-    {
+
+  {
     id: 8,
     category: 'academique',
     title: 'Application Mobile de Fitness',
@@ -106,8 +106,8 @@ const allProjects = [
     badge: 'Académique',
     school: 'École Pluridisciplinaire',
   },
-  
-  
+
+
 ]
 
 function ProjectCard({
@@ -146,7 +146,7 @@ function ProjectCard({
         duration: 0.45,
         ease: [0.22, 1, 0.36, 1],
       }}
-className="group flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/50 sm:w-[85%] lg:w-[48%]"    >
+      className="group flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/50 sm:w-[85%] lg:w-[48%]"    >
       <div className="relative aspect-[16/10] overflow-hidden border-b border-border">
         <Image
           src={project.image}
@@ -160,8 +160,10 @@ className="group flex w-full shrink-0 snap-start flex-col overflow-hidden rounde
           <span className="rounded-full bg-background/90 px-3 py-1 font-mono text-xs">
             0{index + 1}
           </span>
-
-          <span className="rounded-full bg-primary/20 px-3 py-1 font-mono text-xs text-primary">
+          <span
+            className={`rounded-full bg-gray-300 px-3 py-1 font-mono text-xs ${project.badge === "Professionnel" ? "text-blue-700" : "text-green-700"
+              }`}
+          >
             {project.badge}
           </span>
         </div>
@@ -175,12 +177,14 @@ className="group flex w-full shrink-0 snap-start flex-col overflow-hidden rounde
 
         {project.company && (
           <p className="mt-1 text-xs uppercase text-primary">
+            {"Entreprise : "}
             {project.company}
           </p>
         )}
 
         {project.school && (
-           <p className="mt-1 text-xs uppercase text-secondary-foreground">
+          <p className="mt-1 text-xs uppercase text-secondary-foreground">
+            {"École : "}
             {project.school}
           </p>
         )}
@@ -224,9 +228,11 @@ className="group flex w-full shrink-0 snap-start flex-col overflow-hidden rounde
 }
 export function Projects() {
   const trackRef = useRef<HTMLDivElement>(null)
-  const [activeCategory, setActiveCategory] = useState<'professionnel' | 'academique'>('professionnel')
+  const [activeCategory, setActiveCategory] = useState<'all' | 'professionnel' | 'academique'>('all')
 
-  const filteredProjects = allProjects.filter((p) => p.category === activeCategory)
+  const filteredProjects = activeCategory === 'all'
+    ? allProjects
+    : allProjects.filter((p) => p.category === activeCategory)
 
   const scroll = (direction: 'left' | 'right') => {
     const track = trackRef.current
@@ -256,10 +262,21 @@ export function Projects() {
           <div>
             <button
               type="button"
+              onClick={() => setActiveCategory('all')}
+              className={`px-4 py-2 font-medium transition-colors ${activeCategory === 'all'
+                ? 'border-b-2 border-primary text-primary'
+                : 'text-muted-foreground hover:text-foreground'
+                }`}
+            >
+              Tous les projets
+            </button>
+
+            <button
+              type="button"
               onClick={() => setActiveCategory('professionnel')}
               className={`px-4 py-2 font-medium transition-colors ${activeCategory === 'professionnel'
-                  ? 'border-b-2 border-primary text-primary'
-                  : 'text-muted-foreground hover:text-foreground'
+                ? 'border-b-2 border-primary text-primary'
+                : 'text-muted-foreground hover:text-foreground'
                 }`}
             >
               Professionnel
@@ -268,8 +285,8 @@ export function Projects() {
               type="button"
               onClick={() => setActiveCategory('academique')}
               className={`px-4 py-2 font-medium transition-colors ${activeCategory === 'academique'
-                  ? 'border-b-2 border-primary text-primary'
-                  : 'text-muted-foreground hover:text-foreground'
+                ? 'border-b-2 border-primary text-primary'
+                : 'text-muted-foreground hover:text-foreground'
                 }`}
             >
               Académique
