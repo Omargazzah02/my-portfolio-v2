@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { ArrowLeft, ArrowRight, ExternalLink, Github } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 import { motion, useInView } from 'framer-motion'
@@ -233,6 +233,15 @@ export function Projects() {
   const filteredProjects = activeCategory === 'all'
     ? allProjects
     : allProjects.filter((p) => p.category === activeCategory)
+
+    useEffect(() => {
+    if (trackRef.current) {
+      trackRef.current.scrollTo({
+        left: 0,
+        behavior: 'smooth' 
+      })
+    }
+  }, [activeCategory])
 
   const scroll = (direction: 'left' | 'right') => {
     const track = trackRef.current
