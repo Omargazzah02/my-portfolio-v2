@@ -6,15 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        destination: 'https://my-portfolio-omar40.vercel.app/',
-        permanent: false,
-      },
-    ]
-  },
 }
 
 export default nextConfig
