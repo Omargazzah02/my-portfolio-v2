@@ -146,8 +146,7 @@ function ProjectCard({
         duration: 0.45,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="group flex w-[88%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/50 sm:w-[70%] lg:w-[48%]"
-    >
+className="group flex w-full shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/50 sm:w-[85%] lg:w-[48%]"    >
       <div className="relative aspect-[16/10] overflow-hidden border-b border-border">
         <Image
           src={project.image}

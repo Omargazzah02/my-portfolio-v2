@@ -9,15 +9,15 @@ const stats = [
 export function About() {
   return (
     <section id="a-propos" className="scroll-mt-20 border-t border-border/60">
-      <div className="mx-auto max-w-6xl px-6 py-20 md:py-24">
-        <SectionHeading
+   
+
+        <div className="mx-auto max-w-6xl px-6 py-20 flex flex-col md:flex-row md:gap-12 gap-6 items-start">
+          <div className="space-y-4 flex-2">
+                 <SectionHeading
           eyebrow="À propos"
           title="Passionné par le code et l'innovation"
         />
-
-        <div className="mt-10 grid gap-12 md:grid-cols-[1.5fr_1fr]">
-          <div className="space-y-4 text-pretty leading-relaxed text-muted-foreground">
-            <p>
+            <p className="text-muted-foreground">
               Développeur web passionné, je conçois des applications modernes,
               performantes et centrées sur l&apos;utilisateur. Fort d&apos;une
               formation en informatique et de plusieurs projets réalisés en
@@ -25,7 +25,7 @@ export function About() {
               technologies telles que HTML, CSS, JavaScript et PHP, ainsi que
               des frameworks comme React, Symfony ou Node.js.
             </p>
-            <p>
+            <p className="text-muted-foreground">
               Curieux et rigoureux, je veille à proposer un code propre,
               maintenable et conforme aux bonnes pratiques. Mon objectif :
               développer des solutions web innovantes qui répondent efficacement
@@ -33,7 +33,7 @@ export function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 md:grid-cols-1">
+          <div className="flex flex-col gap-4 md:flex-1 w-full">
             {stats.map((stat) => (
               <div
                 key={stat.label}
@@ -47,7 +47,6 @@ export function About() {
             ))}
           </div>
         </div>
-      </div>
     </section>
   )
 }
