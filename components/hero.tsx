@@ -69,7 +69,7 @@ export function Hero() {
           <div className="absolute -inset-4 -z-10 rounded-3xl bg-primary/10 blur-2xl" />
           <div className="overflow-hidden rounded-3xl border border-border bg-card">
             <Image
-              src="/omar-portrait.png"
+              src="/omar-portrait.jpg"
               alt="Portrait de Omar Gazzah"
               width={640}
               height={720}
