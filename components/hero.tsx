@@ -8,7 +8,7 @@ export function Hero() {
         <div className="flex flex-col items-start gap-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 font-mono text-xs text-muted-foreground">
             <span className="h-2 w-2 rounded-full bg-primary" />
-            Disponible pour de nouveaux projets
+            Disponible immédiatement pour un CDI
           </span>
 
           <div className="space-y-3">
@@ -22,8 +22,7 @@ export function Hero() {
           </div>
 
           <p className="max-w-md text-pretty leading-relaxed text-muted-foreground">
-            Je conçois et développe des applications web modernes, performantes
-            et centrées sur l&apos;utilisateur, du front-end au back-end.
+           {"Issu d'un Mastère Lead Développeur Full Stack, je conçois et développe des applications web modernes et performantes, du front-end au back-end."}
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -36,6 +35,7 @@ export function Hero() {
             </a>
             <a
               href="/cv.pdf"
+              target="_blank"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
             >
               <FileText className="h-4 w-4" />
@@ -45,7 +45,7 @@ export function Hero() {
 
           <div className="flex items-center gap-4 pt-2">
             <a
-              href="https://github.com"
+              href="https://github.com/Omargazzah02"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-foreground"
@@ -54,7 +54,7 @@ export function Hero() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/omar-gaz/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-foreground"
