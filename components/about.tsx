@@ -1,9 +1,9 @@
 import { SectionHeading } from '@/components/section-heading'
 
 const stats = [
-  { value: '10+', label: 'Projets réalisés' },
-  { value: '3+', label: 'Années de pratique' },
-  { value: '15+', label: 'Technologies maîtrisées' },
+  { value: "10+", label: "Projets réalisés" },
+  { value: "2+", label: "Années d'expérience pratique" },
+  { value: "15+", label: "Technologies maîtrisées" },
 ]
 
 export function About() {
@@ -18,18 +18,10 @@ export function About() {
           title="Passionné par le code et l'innovation"
         />
             <p className="text-muted-foreground">
-              Développeur web passionné, je conçois des applications modernes,
-              performantes et centrées sur l&apos;utilisateur. Fort d&apos;une
-              formation en informatique et de plusieurs projets réalisés en
-              front-end et back-end, j&apos;ai acquis une solide maîtrise des
-              technologies telles que HTML, CSS, JavaScript et PHP, ainsi que
-              des frameworks comme React, Symfony ou Node.js.
+              {"Développeur web passionné, je conçois des applications modernes, performantes et centrées sur l'utilisateur. Fort d'une formation en développement logiciel, de deux années d'expérience professionnelle acquises à travers mes stages, ainsi que de plusieurs projets réalisés en front-end et en back-end, j'ai développé une solide maîtrise des technologies telles que React.js, Next.js, Node.js, Supabase et Django."}
             </p>
             <p className="text-muted-foreground">
-              Curieux et rigoureux, je veille à proposer un code propre,
-              maintenable et conforme aux bonnes pratiques. Mon objectif :
-              développer des solutions web innovantes qui répondent efficacement
-              aux besoins des utilisateurs.
+             {"Curieux et rigoureux, je veille à produire un code propre, maintenable, sécurisé et conforme aux bonnes pratiques, tout en développant des solutions web innovantes qui répondent efficacement aux besoins des utilisateurs."}
             </p>
           </div>
 
