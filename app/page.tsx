@@ -21,7 +21,7 @@ export default function Page() {
         <Experiences />
         <Formations />
         <Skills />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Technologies />
         <Contact />
       </main>
