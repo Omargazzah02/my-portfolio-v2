@@ -3,7 +3,7 @@ import { SectionHeading } from '@/components/section-heading'
 const stats = [
   { value: "10+", label: "Projets réalisés" },
   { value: "2+", label: "Années d'expérience pratique" },
-  { value: "15+", label: "Technologies maîtrisées" },
+  { value: "15+", label: "Compétences techniques " },
 ]
 
 export function About() {
