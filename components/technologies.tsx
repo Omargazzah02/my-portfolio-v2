@@ -3,19 +3,20 @@ import { SectionHeading } from '@/components/section-heading'
 const groups = [
   {
     label: 'Front-end',
-    items: ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Tailwind CSS'],
+    items: ["HTML", "CSS", "React", "Next.js", "Vue.js", "Tailwind CSS"],
   },
   {
-    label: 'Back-end',
-    items: ['PHP', 'Python', 'Spring Boot', 'Express.js', 'Symfony', 'Django'],
+    label: 'Back-end & Bases de données',
+    items: ["Node.js", "Django", "Spring Boot", "Supabase", "MySQL", "PostgreSQL", "MongoDB"],
   },
   {
-    label: 'Bases de données',
-    items: ['MySQL', 'PostgreSQL'],
+    label: 'Langages de programmation',
+    items: ["JavaScript", "Java", "Python", "PHP", "Dart"]
+    ,
   },
   {
-    label: 'Outils & DevOps',
-    items: ['GitHub', 'Docker', 'Postman', 'Figma', 'Jest', 'Cypress'],
+    label: 'DevOps & Qualité',
+    items: ["GitHub", "GitHub Actions", "Ansible", "Docker", "Kubernetes", "Terraform", "Jest", "Cypress"]
   },
 ]
 
