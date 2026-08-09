@@ -18,7 +18,7 @@ const channels = [
     icon: Mail,
     label: 'Email',
     value: 'gazzahomar2001@gmail.com',
-    href: 'mailto:omar.gazzah@email.com',
+    href: 'mailto:gazzahomar2001@gmail.com',
   },
   {
     icon: Phone,
@@ -40,7 +40,7 @@ export function Contact() {
             align="center"
           />
 
-          <div className="mx-auto mt-10 grid max-w-2xl gap-4 sm:grid-cols-2">
+          <div className="flex flex-col gap-4 pt-8 sm:pt-12 md:justify-center ">
             {channels.map((channel) => {
               const Icon = channel.icon
               return (
