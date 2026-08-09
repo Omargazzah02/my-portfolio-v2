@@ -11,101 +11,98 @@ const allProjects = [
   {
     id: 1,
     category: 'professionnel',
-    title: 'Refonte Site Vitrine Koppelia',
-    image: '/project-startbootstrap.png',
-    description: 'Refonte complète du site vitrine avec intégration d\'un module d\'IA générative pour les formulaires.',
-    tags: ['Next.js', 'Tailwind CSS', 'Supabase'],
-    demo: '#',
-    repo: '#',
-    badge: 'Professionnel',
+    title: 'Site web Koppelia',
+    image: '/projects/koppelia-site.png',
+    description: "Refonte complète du site vitrine de Koppelia et développement de son dashboard de gestion.",
+    tags: ['Next.js', 'Tailwind CSS', 'Supabase' , 'CI/CD'],
+    demo: 'https://koppelia.com/',
     company: 'Koppelia',
   },
-  {
+    {
     id: 2,
     category: 'professionnel',
-    title: 'Plateforme SaaS Multi-rôles',
-    image: '/project-teamtrack.png',
-    description: 'Plateforme SaaS avec système de rôles avancé, authentification sécurisée et gestion des utilisateurs.',
-    tags: ['Next.js', 'Supabase', 'RLS'],
-    demo: '#',
-    repo: '#',
-    badge: 'Professionnel',
-    company: 'Koppelia',
+    title: 'Catalogue des formations',
+    image: '/projects/caplogy.png',
+    description: 'Développement d’un module web de gestion des formations et certifications, avec une page de détails dédiée à chaque formation.',
+    tags: ['Next.js', 'Tailwind CSS', 'Django', 'API Airtable'],
+    demo: 'https://caplogy.com/formationscertifs/',
+    company: 'Caplogy',
   },
   {
     id: 3,
-    category: 'professionnel',
-    title: 'App Géolocalisation Bornes Électriques',
-    image: '/project-hercules.png',
-    description: 'Application multiplateforme de géolocalisation des stations de recharge électrique en temps réel.',
-    tags: ['Flutter', 'Spring Boot', 'PostgreSQL'],
-    demo: '#',
-    repo: '#',
-    badge: 'Professionnel',
-    company: 'Tunisie Télécom',
-  },
-  {
-    id: 4,
     category: 'academique',
-    title: 'Start Bootstrap',
-    image: '/project-startbootstrap.png',
-    description: 'Site web statique développé avec Next.js et Tailwind CSS, inspiré du site Start Bootstrap.',
-    tags: ['Next.js', 'Tailwind CSS'],
-    demo: '#',
-    repo: '#',
-    badge: 'Académique',
+    title: 'Plateforme BURGERITO',
+    image: '/projects/burgerito.png',
+    description: 'Développement de la plateforme BURGERITO avec authentification des utilisateurs et gestion des commandes et des paniers de burgers.',
+    tags: ['Next.js', 'Tailwind CSS', 'JavaScript'],
+    demo: 'https://burgerito-app-user.vercel.app/',
+    repo: 'https://github.com/Omargazzah02/burgerito-app',
     school: 'EEMI',
   },
-  {
+
+
+     {
+    id: 4,
+    category: 'academique',
+    title: 'Plateforme des Artisans Producteurs',
+    image: '/projects/pap.png',
+    description: 'Développement en équipe d’une plateforme pour le client PAP, selon la méthodologie GitHub Flow et les bonnes pratiques de CI/CD.',
+    tags: ['Next.js', 'Odoo', 'GitHub Actions', 'Jest', 'Vercel'],
+    demo: 'https://comptoir-artisan.vercel.app/',
+    repo : "https://github.com/AeonPSR/workshop2_M2",
+    school: 'EEMI',
+  },
+
+
+   {
     id: 5,
     category: 'academique',
-    title: 'Système de Gestion de Tâches',
-    image: '/project-teamtrack.png',
-    description: 'Plateforme collaborative de gestion de projets avec système d\'authentification et base de données.',
-    tags: ['Node.js', 'React', 'MongoDB'],
-    demo: '#',
-    repo: '#',
-    badge: 'Académique',
-    school: 'ECE',
+    title: 'Scoutify',
+    image: '/projects/scoutify.png',
+    description: 'Développement de la plateforme Scoutify pour la génération de CV sportifs via un formulaire, avec un espace d’administration pour la gestion des logos, badges et l’export PDF.',
+    tags: ['Next.js', 'Tailwind CSS', 'SQLite', 'API REST'],
+    demo: 'https://workshop-m2.vercel.app/',
+    repo : "https://github.com/AeonPSR/workshop-m2",
+    school: 'EEMI',
   },
-  {
+
+  
+   {
     id: 6,
     category: 'academique',
-    title: 'Application Mobile de Fitness',
-    image: '/project-hercules.png',
-    description: 'Application de suivi d\'entraînement avec statistiques, plans d\'entraînement personnalisés et notifications.',
-    tags: ['Flutter', 'Firebase'],
-    demo: '#',
-    repo: '#',
-    badge: 'Académique',
-    school: 'École Pluridisciplinaire',
+    title: 'OWASP Juice Shop',
+    image: '/projects/juice-shop.png',
+    description: 'Recréation du site web OWASP Juice Shop, dans le respect des meilleures pratiques de sécurité web, avec correction des principales vulnérabilités identifiées dans l’OWASP Top 10.',
+    tags: ["Next.js", "Node.js", "Sécurité web"],
+    repo : "https://github.com/Omargazzah02/owasp-juice.shop",
+    school: 'EEMI',
   },
 
-  {
+
+     {
     id: 7,
-    category: 'academique',
-    title: 'Application Mobile de Fitness',
-    image: '/project-hercules.png',
-    description: 'Application de suivi d\'entraînement avec statistiques, plans d\'entraînement personnalisés et notifications.',
-    tags: ['Flutter', 'Firebase'],
-    demo: '#',
-    repo: '#',
-    badge: 'Académique',
-    school: 'École Pluridisciplinaire',
+    category: 'professionnel',
+    title: 'Plateforme Syndico',
+    image: '/projects/syndico.png',
+    description: 'Développement en équipe d’une plateforme de gestion financière et administrative des copropriétaires d’un immeuble.',
+    tags: ["Next.js", "Django", "Python"],
+    repo : "https://github.com/Omargazzah02/syndico",
+    company: 'Code Time',
   },
 
-  {
+
+    {
     id: 8,
-    category: 'academique',
-    title: 'Application Mobile de Fitness',
-    image: '/project-hercules.png',
-    description: 'Application de suivi d\'entraînement avec statistiques, plans d\'entraînement personnalisés et notifications.',
-    tags: ['Flutter', 'Firebase'],
-    demo: '#',
-    repo: '#',
-    badge: 'Académique',
-    school: 'École Pluridisciplinaire',
+    category: 'professionnel',
+    title: 'Application Findme',
+    image: '/projects/findme.png',
+    description: 'Développement d’une application mobile destinée aux conducteurs de véhicules électriques, permettant de localiser les bornes de recharge adaptées à leur position et à leurs besoins.',
+    tags: ["Flutter", "Spring Boot", "Java", "MySQL"],
+    demo :"https://drive.google.com/file/d/1rgX2-bvB8PCGfgr_h0o6MCzUNmNmQtfa/view",
+    repo : "https://github.com/Omargazzah02/findme",
+    company: 'Tunisie Telecom',
   },
+
 
 
 ]
@@ -161,10 +158,10 @@ function ProjectCard({
             0{index + 1}
           </span>
           <span
-            className={`rounded-full bg-gray-300 px-3 py-1 font-mono text-xs ${project.badge === "Professionnel" ? "text-blue-700" : "text-green-700"
+            className={`rounded-full bg-gray-300 px-3 py-1 font-mono text-xs ${project.category === "professionnel" ? "text-blue-700" : "text-green-700"
               }`}
           >
-            {project.badge}
+            {project.category === "professionnel" ? "Professionnel" : "Académique"}
           </span>
         </div>
       </div>
@@ -176,14 +173,14 @@ function ProjectCard({
         </h3>
 
         {project.company && (
-          <p className="mt-1 text-xs uppercase text-primary">
+          <p className="mt-1 text-xs text-primary">
             {"Entreprise : "}
             {project.company}
           </p>
         )}
 
         {project.school && (
-          <p className="mt-1 text-xs uppercase text-secondary-foreground">
+          <p className="mt-1 text-xs text-secondary-foreground">
             {"École : "}
             {project.school}
           </p>
@@ -205,21 +202,23 @@ function ProjectCard({
         </div>
 
         <div className="mt-6 flex items-center gap-5 border-t border-border pt-5">
-          <a
+         {project.demo && (  <a
             href={project.demo}
+            target="_blank"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary"
           >
             <ExternalLink className="h-4 w-4" />
             Démo
-          </a>
+          </a>)}
 
-          <a
+         {project.repo && ( <a
             href={project.repo}
+            target="_blank"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground"
           >
             <Github className="h-4 w-4" />
             Code
-          </a>
+          </a>)}
         </div>
 
       </div>
