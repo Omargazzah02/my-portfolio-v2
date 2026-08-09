@@ -26,7 +26,7 @@ export function Technologies() {
         <SectionHeading
           eyebrow="Stack technique"
           title="Technologies"
-          description="Les langages, frameworks et outils que j'utilise au quotidien."
+          description="Les langages, frameworks et outils que j’ai utilisés ou que j’utilise au quotidien."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">

@@ -5,26 +5,26 @@ const channels = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'in/omar-gazzah',
-    href: 'https://linkedin.com',
+    value: 'in/omar-gaz',
+    href: 'https://www.linkedin.com/in/omar-gaz/',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/omar-gazzah',
-    href: 'https://github.com',
+    value: 'github.com/Omargazzah02',
+    href: 'https://github.com/Omargazzah02',
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'omar.gazzah@email.com',
+    value: 'gazzahomar2001@gmail.com',
     href: 'mailto:omar.gazzah@email.com',
   },
   {
     icon: Phone,
     label: 'Téléphone',
-    value: '+216 00 000 000',
-    href: 'tel:+21600000000',
+    value: '+33 7 67 70 86 03',
+    href: 'tel:+33767708603',
   },
 ]
 
@@ -36,7 +36,7 @@ export function Contact() {
           <SectionHeading
             eyebrow="Contact"
             title="Travaillons ensemble"
-            description="Un projet en tête ou une opportunité à partager ? N'hésitez pas à me contacter, je vous répondrai rapidement."
+            description="Vous recherchez un profil motivé pour renforcer votre équipe ou vous avez un projet à concrétiser ? N’hésitez pas à me contacter."
             align="center"
           />
 
