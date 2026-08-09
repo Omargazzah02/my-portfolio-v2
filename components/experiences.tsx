@@ -4,33 +4,55 @@ import { SectionHeading } from '@/components/section-heading'
 const experiences = [
   {
     id: 1,
-    poste: 'Développeur Full-Stack (Stage Alterné)',
+    poste: 'Développeur Full-Stack – Stage alterné',
     entreprise: 'Koppelia',
-    periode: 'Déc. 2025 – Juil. 2026',
+    periode: 'déc. 2025 - juil. 2026 · 8 mois',
     lieu: 'Lille, France',
+    project: "Développement d’un dashboard de gestion multi-rôles et refonte du site vitrine de l’entreprise",
     missions: [
-      'Refonte du site vitrine avec design moderne et optimisation SEO',
-      'Création d\'une plateforme SaaS multi-rôles avec système de permissions avancé',
-      'Intégration d\'un module d\'IA générative pour automatisation des formulaires',
-      'Mise en place de tests CI/CD avec GitHub Actions et déploiement en production',
-    ],
-    competences: ['Next.js', 'shadcn/ui', 'Supabase', 'Deno.js', 'RLS', 'GitHub Actions', 'CI/CD'],
-    resultat: 'Application déployée en production avec automatisation complète des workflows et couverture de tests robuste.',
+      'Création d’interfaces front-end avec Next.js et shadcn/ui depuis Figma.',
+      'Développement de fonctionnalités back-end avec Supabase et Deno.js, sécurisées via RLS.',
+      'Mise en place d’un workflow CI/CD avec GitHub Actions, tests et revues de code.',
+      'Développement de fonctionnalités basées sur l’IA pour la génération de formulaires personnalisés.'
+    ]
   },
   {
     id: 2,
-    poste: 'Développeur Mobile & Web (Stage)',
-    entreprise: 'Tunisie Télécom',
-    periode: 'Mai 2024 – Sept. 2024',
-    lieu: 'Sousse, Tunisie',
+    poste: 'Développeur Full-Stack – Stage',
+    entreprise: 'Caplogy',
+    periode: 'sept. 2025 - nov. 2025 · 3 mois',
+    lieu: 'Vélizy-Villacoublay, France',
+    project: "Participation au développement et à la maintenance du site web de l’entreprise",
     missions: [
-      'Conception et développement d\'une application multiplateforme de géolocalisation',
-      'Création d\'une API REST sécurisée avec authentification et gestion des données',
-      'Intégration de cartes interactives et algorithmes de routage en temps réel',
-      'Synchronisation des données entre applications mobile et backend',
+      "Développement de composants réutilisables afin de faciliter la maintenance avec Next.js.",
+      "Implémentation de fonctionnalités back-end sécurisées avec Django."
     ],
-    competences: ['Flutter', 'Spring Boot', 'Java', 'Angular', 'PostgreSQL', 'API REST', 'Maps'],
-    resultat: 'Application fonctionnelle permettant la cartographie et le guidage en temps réel vers les 2000+ bornes de recharge.',
+  },
+  {
+    id: 3,
+    poste: 'Développeur Web – Stage',
+    entreprise: 'Ronindevo',
+    periode: 'mai 2025 - juil. 2025 · 3 mois',
+    lieu: 'Lyon, France',
+    missions: [
+      "Création d’interfaces modernes et responsives avec Next.js, TailwindCSS et React Native.",
+      "Développement de composants réutilisables pour optimiser le code et faciliter la maintenance.",
+      "Déploiement automatisé et validation de la qualité avec Vercel, GitHub, Jest et Cypress.",
+      "Intégration d’API REST/GraphQL pour la gestion et l’exploitation des données JSON."
+    ],
+  },
+  {
+    id: 4,
+    poste: 'Développeur Web et Mobile – Stage',
+    entreprise: 'Tunisie Telecom',
+    periode: 'mai 2024 - sept. 2024 · 5 mois',
+    lieu: 'Sousse, Tunisie',
+    project: "Création d'une application multiplateforme pour la localisation des stations de recharge électrique",
+    missions: [
+      "Analyse des besoins utilisateurs et proposition de solutions techniques adaptées.",
+      "Développement et sécurisation de la partie back-end avec Spring Boot et Java.",
+      "Développement des interfaces utilisateur interactives en utilisant Flutter et Angular."
+    ],
   },
 ]
 
@@ -41,7 +63,7 @@ export function Experiences() {
         <SectionHeading
           eyebrow="Carrière"
           title="Expériences professionnelles"
-          description="Des stages et missions réalisées dans un contexte professionnel, avec responsabilités techniques et impact mesurable."
+          description="Découvrez mon parcours professionnel et les projets sur lesquels j’ai travaillé."
         />
 
         <div className="mt-12 divide-y divide-border border-y border-border">
@@ -68,8 +90,11 @@ export function Experiences() {
                 </div>
               </div>
 
+
+
               {/* Missions */}
-              <div className="mt-8">
+              <div className="mt-6">
+                {exp.project && (<h4 className="font-semibold text-foreground">Projet : {exp.project}</h4>)}
                 <h4 className="font-semibold text-foreground">Missions & Contributions</h4>
                 <ul className="mt-3 space-y-2">
                   {exp.missions.map((mission, idx) => (
@@ -82,7 +107,7 @@ export function Experiences() {
               </div>
 
               {/* Compétences */}
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <h4 className="font-semibold text-foreground">Stack Technologique</h4>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {exp.competences.map((comp) => (
@@ -91,13 +116,13 @@ export function Experiences() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div>*/}
 
               {/* Résultat */}
-              <div className="mt-6 rounded-lg border border-border bg-secondary/30 p-4">
+              {/* <div className="mt-6 rounded-lg border border-border bg-secondary/30 p-4">
                 <p className="font-mono text-xs font-semibold uppercase tracking-wide text-secondary-foreground">Résultat / Impact</p>
                 <p className="mt-2 text-sm text-foreground">{exp.resultat}</p>
-              </div>
+              </div>*/}
             </article>
           ))}
         </div>
