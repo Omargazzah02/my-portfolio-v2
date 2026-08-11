@@ -12,7 +12,7 @@ const formations = [
   },
   {
     id: 2,
-    diplome: '3ème année de licence développeur concepteur logiciel',
+    diplome: 'Bachelor informatique développeur d’applications',
     ecole: 'ECE - École d\'ingénieurs',
     lieu: 'Lyon, France',
     periode: '2023 – 2024',
@@ -21,7 +21,7 @@ const formations = [
   },
   {
     id: 3,
-    diplome: '1ère et 2ème année de licence en génie logiciel',
+    diplome: '1re et 2e années de licence en informatique',
     ecole: 'École Pluridisciplinaire Internationale',
     lieu: 'Sousse, Tunisie',
     periode: '2021 – 2023',

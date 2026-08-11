@@ -4,7 +4,7 @@ import { SectionHeading } from '@/components/section-heading'
 const experiences = [
   {
     id: 1,
-    poste: 'Développeur Full-Stack – Stage alterné',
+    poste: 'Développeur full-stack – Stage alterné',
     entreprise: 'Koppelia',
     periode: 'déc. 2025 - juil. 2026 · 8 mois',
     lieu: 'Lille, France',
@@ -18,7 +18,7 @@ const experiences = [
   },
   {
     id: 2,
-    poste: 'Développeur Full-Stack – Stage',
+    poste: 'Développeur full-stack – Stage',
     entreprise: 'Caplogy',
     periode: 'sept. 2025 - nov. 2025 · 3 mois',
     lieu: 'Vélizy-Villacoublay, France',
@@ -30,7 +30,7 @@ const experiences = [
   },
   {
     id: 3,
-    poste: 'Développeur Web – Stage',
+    poste: 'Développeur web et mobile – Stage',
     entreprise: 'Ronindevo',
     periode: 'mai 2025 - juil. 2025 · 3 mois',
     lieu: 'Lyon, France',
@@ -43,7 +43,7 @@ const experiences = [
   },
   {
     id: 4,
-    poste: 'Développeur Web et Mobile – Stage',
+    poste: 'Développeur web et mobile – Stage',
     entreprise: 'Tunisie Telecom',
     periode: 'mai 2024 - sept. 2024 · 5 mois',
     lieu: 'Sousse, Tunisie',

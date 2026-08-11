@@ -34,7 +34,7 @@ export function Hero() {
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="/cv.pdf"
+              href="https://drive.google.com/file/d/1GQBoYdoY5sN0mIzxPl6idFxFrq24BnWX/view"
               target="_blank"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
             >
