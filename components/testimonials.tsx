@@ -8,7 +8,7 @@ import { motion, useInView } from 'framer-motion'
 
 const testimonials = [
   {
-    quote: 'J’ai eu le plaisir d’accueillir Omar Ghazza en stage de développeur web et mobile au sein de mon entreprise. Dès les premiers jours, il s’est démarqué par son autonomie, sa curiosité et sa capacité à apprendre rapidement. Omar a fortement contribué à l’avancement de nos projets, apportant des solutions efficaces et de la valeur ajoutée grâce à son sérieux et son implication.',
+    quote: 'J’ai eu le plaisir d’accueillir Omar en stage de développeur web et mobile au sein de mon entreprise. Dès les premiers jours, il s’est démarqué par son autonomie, sa curiosité et sa capacité à apprendre rapidement. Omar a fortement contribué à l’avancement de nos projets, apportant des solutions efficaces et de la valeur ajoutée grâce à son sérieux et son implication.',
     name: 'Alaaeddine Gharbi',
     role: 'Founder & CEO',
     company: "Ronindevo",
@@ -97,7 +97,7 @@ function TestimonialCard({
             <span className="mt-0.5 block text-xs text-muted-foreground">
               {testimonial.company}
             </span>
-            
+
           </div>
 
 

@@ -40,7 +40,7 @@ export function Contact() {
             align="center"
           />
 
-          <div className="flex flex-col gap-4 pt-8 sm:pt-12 md:justify-center ">
+          <div className="flex flex-col gap-2 pt-8 sm:pt-12 md:justify-center ">
             {channels.map((channel) => {
               const Icon = channel.icon
               return (
