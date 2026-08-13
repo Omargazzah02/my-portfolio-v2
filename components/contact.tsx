@@ -17,8 +17,8 @@ const channels = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'gazzahomar2001@gmail.com',
-    href: 'mailto:gazzahomar2001@gmail.com',
+    value: 'omar.gazzah@outlook.fr',
+    href: 'mailto:omar.gazzah@outlook.fr',
   },
   {
     icon: Phone,

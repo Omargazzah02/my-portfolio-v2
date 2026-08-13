@@ -18,7 +18,7 @@ export function About() {
           title="Passionné par le code et l'innovation"
         />
             <p className="text-muted-foreground">
-              {"Développeur web passionné, je conçois des applications modernes, performantes et centrées sur l'utilisateur. Fort d'une formation en développement logiciel, de deux années d'expérience professionnelle acquises à travers mes stages, ainsi que de plusieurs projets réalisés en front-end et en back-end, j'ai développé une solide maîtrise des technologies telles que React.js, Next.js, Node.js, Supabase et Django."}
+              {"Développeur web passionné, je conçois des applications modernes, performantes et centrées sur l’utilisateur. Fort de mon parcours académique en informatique et de deux années d’expérience professionnelle acquises à travers mes stages, ainsi que de plusieurs projets réalisés en front-end et en back-end, j’ai développé une solide maîtrise de technologies telles que React.js, Next.js, Node.js, Supabase et Django."}
             </p>
             <p className="text-muted-foreground">
              {"Curieux et rigoureux, je veille à produire un code propre, maintenable, sécurisé et conforme aux bonnes pratiques, tout en développant des solutions web innovantes qui répondent efficacement aux besoins des utilisateurs."}
