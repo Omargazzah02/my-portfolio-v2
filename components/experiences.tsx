@@ -13,7 +13,7 @@ const experiences = [
       'Création d’interfaces front-end avec Next.js et shadcn/ui depuis Figma.',
       'Développement de fonctionnalités back-end avec Supabase et Deno.js, sécurisées via RLS.',
       'Mise en place d’un workflow CI/CD avec GitHub Actions, tests et revues de code.',
-      'Développement de fonctionnalités basées sur l’IA pour la génération de formulaires personnalisés.'
+      'Développement d’une fonctionnalité IA pour le pré-remplissage personnalisé des formulaires.'
     ]
   },
   {
