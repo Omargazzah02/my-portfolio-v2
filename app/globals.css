@@ -49,13 +49,13 @@
 
 :root {
   color-scheme: light;
-  --background: oklch(1 0 0);
+  --background: oklch(98.288% 0.00104 11.251);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(0.72 0.18 55);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -66,8 +66,8 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
+  --ring: oklch(0.72 0.18 55);
+  --chart-1: oklch(0.72 0.18 55);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
@@ -75,35 +75,35 @@
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary: oklch(0.72 0.18 55);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-ring: oklch(0.72 0.18 55);
 }
 
 .dark {
   color-scheme: dark;
   --background: oklch(0.14 0.012 50);
   --foreground: oklch(0.98 0.005 50);
-    --card: oklch(0.18 0.015 50);
+  --card: oklch(0.18 0.015 50);
   --card-foreground: oklch(0.98 0.005 50);
   --popover: oklch(0.18 0.015 50);
   --popover-foreground: oklch(0.98 0.005 50);
-    --primary: oklch(0.72 0.18 55);
+  --primary: oklch(0.72 0.18 55);
   --primary-foreground: oklch(0.14 0.03 55);
-    --secondary: oklch(0.24 0.018 50);
+  --secondary: oklch(0.24 0.018 50);
   --secondary-foreground: oklch(0.98 0.005 50);
   --muted: oklch(0.22 0.015 50);
   --muted-foreground: oklch(0.72 0.015 50);
-    --accent: oklch(0.72 0.18 55);
+  --accent: oklch(0.72 0.18 55);
   --accent-foreground: oklch(0.14 0.03 55);
   --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(0.98 0.005 50 / 12%);
+  --border: oklch(0.98 0.005 50 / 12%);
   --input: oklch(0.98 0.005 50 / 15%);
   --ring: oklch(0.72 0.18 55);
-    --chart-1: oklch(0.72 0.18 55);
+  --chart-1: oklch(0.72 0.18 55);
   --chart-2: oklch(0.65 0.14 85);
   --chart-3: oklch(0.55 0.12 35);
   --chart-4: oklch(0.45 0.08 50);
@@ -159,9 +159,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   html {
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -169,11 +171,11 @@
 
 @layer utilities {
   .portfolio-scroll {
-    -ms-overflow-style: none; 
+    -ms-overflow-style: none;
     scrollbar-width: none;
   }
 
   .portfolio-scroll::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
 }
