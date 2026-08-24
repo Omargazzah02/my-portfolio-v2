@@ -63,7 +63,7 @@ export function Experiences() {
         <SectionHeading
           eyebrow="Carrière"
           title="Expériences professionnelles"
-          description="Découvrez mon parcours professionnel et les projets sur lesquels j’ai travaillé."
+          description="Les entreprises qui m'ont fait confiance et ce que j'y ai apporté."
         />
 
         <div className="mt-12 divide-y divide-border border-y border-border">
