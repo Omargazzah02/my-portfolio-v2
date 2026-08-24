@@ -14,11 +14,11 @@ const allProjects = [
     title: 'Site web Koppelia',
     image: '/projects/koppelia-site.png',
     description: "Refonte complète du site vitrine de Koppelia et développement de son dashboard de gestion.",
-    tags: ['Next.js', 'Tailwind CSS', 'Supabase' , 'CI/CD'],
+    tags: ['Next.js', 'Tailwind CSS', 'Supabase', 'CI/CD'],
     demo: 'https://koppelia.com/',
     company: 'Koppelia',
   },
-    {
+  {
     id: 2,
     category: 'professionnel',
     title: 'Catalogue des formations',
@@ -40,66 +40,77 @@ const allProjects = [
     school: 'EEMI',
   },
 
-
-     {
+  {
     id: 4,
+    category: 'academique',
+    title: 'FontPreview.ai',
+    image: '/projects/font-preview.jpeg',
+    description: 'Développement d’un assistant IA web permettant aux designers et aux développeurs de trouver et de prévisualiser rapidement les typographies adaptées à leurs besoins.',
+    tags: ["Next.js", "Node.js", "Express.js", "Gemini API"],
+    demo: 'https://ai-font-preview.vercel.app/',
+    repo: 'https://github.com/AeonPSR/ai_font_preview',
+    school: 'EEMI',
+  },
+
+  {
+    id: 5,
     category: 'academique',
     title: 'Plateforme des Artisans Producteurs',
     image: '/projects/pap.png',
     description: 'Développement en équipe d’une plateforme pour le client PAP, selon la méthodologie GitHub Flow et les bonnes pratiques de CI/CD.',
     tags: ['Next.js', 'Odoo', 'GitHub Actions', 'Jest', 'Vercel'],
     demo: 'https://comptoir-artisan.vercel.app/',
-    repo : "https://github.com/AeonPSR/workshop2_M2",
+    repo: "https://github.com/AeonPSR/workshop2_M2",
     school: 'EEMI',
   },
 
 
-   {
-    id: 5,
+  {
+    id: 6,
     category: 'academique',
     title: 'Scoutify',
     image: '/projects/scoutify.png',
     description: 'Développement de la plateforme Scoutify pour la génération de CV sportifs via un formulaire, avec un espace d’administration pour la gestion des logos, badges et l’export PDF.',
     tags: ['Next.js', 'Tailwind CSS', 'SQLite', 'API REST'],
     demo: 'https://workshop-m2.vercel.app/',
-    repo : "https://github.com/AeonPSR/workshop-m2",
+    repo: "https://github.com/AeonPSR/workshop-m2",
     school: 'EEMI',
   },
 
-  
-   {
-    id: 6,
+
+  {
+    id: 7,
     category: 'academique',
     title: 'OWASP Juice Shop',
     image: '/projects/juice-shop.png',
     description: 'Recréation du site web OWASP Juice Shop, dans le respect des meilleures pratiques de sécurité web, avec correction des principales vulnérabilités identifiées dans l’OWASP Top 10.',
     tags: ["Next.js", "Node.js", "Sécurité web"],
-    repo : "https://github.com/Omargazzah02/owasp-juice.shop",
+    repo: "https://github.com/Omargazzah02/owasp-juice.shop",
     school: 'EEMI',
   },
 
 
-     {
-    id: 7,
+  {
+    id: 8,
     category: 'professionnel',
     title: 'Plateforme Syndico',
     image: '/projects/syndico.png',
     description: 'Développement en équipe d’une plateforme de gestion financière et administrative des copropriétaires d’un immeuble.',
     tags: ["Next.js", "Django", "Python"],
-    repo : "https://github.com/Omargazzah02/syndico",
+    repo: "https://github.com/Omargazzah02/syndico",
     company: 'Code Time',
   },
 
 
-    {
-    id: 8,
+  {
+    id: 9,
     category: 'professionnel',
     title: 'Application Findme',
     image: '/projects/findme.png',
     description: 'Développement d’une application mobile destinée aux conducteurs de véhicules électriques, permettant de localiser les bornes de recharge adaptées à leur position et à leurs besoins.',
     tags: ["Flutter", "Spring Boot", "Java", "MySQL"],
-    demo :"https://drive.google.com/file/d/1rgX2-bvB8PCGfgr_h0o6MCzUNmNmQtfa/view",
-    repo : "https://github.com/Omargazzah02/findme",
+    demo: "https://drive.google.com/file/d/1rgX2-bvB8PCGfgr_h0o6MCzUNmNmQtfa/view",
+    repo: "https://github.com/Omargazzah02/findme",
     company: 'Tunisie Telecom',
   },
 
@@ -202,7 +213,7 @@ function ProjectCard({
         </div>
 
         <div className="mt-6 flex items-center gap-5 border-t border-border pt-5">
-         {project.demo && (  <a
+          {project.demo && (<a
             href={project.demo}
             target="_blank"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary"
@@ -211,7 +222,7 @@ function ProjectCard({
             Démo
           </a>)}
 
-         {project.repo && ( <a
+          {project.repo && (<a
             href={project.repo}
             target="_blank"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground"
@@ -233,11 +244,11 @@ export function Projects() {
     ? allProjects
     : allProjects.filter((p) => p.category === activeCategory)
 
-    useEffect(() => {
+  useEffect(() => {
     if (trackRef.current) {
       trackRef.current.scrollTo({
         left: 0,
-        behavior: 'smooth' 
+        behavior: 'smooth'
       })
     }
   }, [activeCategory])
