@@ -107,7 +107,7 @@ function TestimonialCard({
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Voir la recommandation de ${testimonial.name} sur LinkedIn`}
-              className="inline-flex shrink-0 items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-primary"
+              className="inline-flex shrink-0 items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
               <span className="hidden sm:inline">Voir sur LinkedIn</span>
               <ExternalLink className="h-4 w-4 shrink-0" />
