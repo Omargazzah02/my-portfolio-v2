@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useRef, useState } from 'react'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, ChevronUp, ChevronDown } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 
 
@@ -19,16 +19,17 @@ const allProjects = [
   },
 
   {
-    id: 4,
+    id: 5,
     category: 'academique',
-    title: 'FontPreview.ai',
-    image: '/projects/font-preview.jpeg',
-    description: 'Développement d’un assistant IA web permettant aux designers et aux développeurs de trouver et de prévisualiser rapidement les typographies adaptées à leurs besoins.',
-    tags: ["Next.js", "Node.js", "Express.js", "Gemini API"],
-    demo: 'https://ai-font-preview.vercel.app/',
-    repo: 'https://github.com/AeonPSR/ai_font_preview',
+    title: 'Plateforme des Artisans Producteurs',
+    image: '/projects/pap.png',
+    description: 'Développement en équipe d’une plateforme pour le client PAP, selon la méthodologie GitHub Flow et les bonnes pratiques de CI/CD.',
+    tags: ['Next.js', 'Odoo', 'GitHub Actions', 'Jest', 'Vercel'],
+    demo: 'https://comptoir-artisan.vercel.app/',
+    repo: "https://github.com/AeonPSR/workshop2_M2",
     school: 'EEMI',
   },
+
   {
     id: 2,
     category: 'professionnel',
@@ -41,14 +42,14 @@ const allProjects = [
   },
 
   {
-    id: 5,
+    id: 4,
     category: 'academique',
-    title: 'Plateforme des Artisans Producteurs',
-    image: '/projects/pap.png',
-    description: 'Développement en équipe d’une plateforme pour le client PAP, selon la méthodologie GitHub Flow et les bonnes pratiques de CI/CD.',
-    tags: ['Next.js', 'Odoo', 'GitHub Actions', 'Jest', 'Vercel'],
-    demo: 'https://comptoir-artisan.vercel.app/',
-    repo: "https://github.com/AeonPSR/workshop2_M2",
+    title: 'FontPreview.ai',
+    image: '/projects/font-preview.jpeg',
+    description: 'Développement d’un assistant IA web permettant aux designers et aux développeurs de trouver et de prévisualiser rapidement les typographies adaptées à leurs besoins.',
+    tags: ["Next.js", "Node.js", "Express.js", "Gemini API"],
+    demo: 'https://ai-font-preview.vercel.app/',
+    repo: 'https://github.com/AeonPSR/ai_font_preview',
     school: 'EEMI',
   },
 
@@ -65,17 +66,15 @@ const allProjects = [
   },
 
   {
-    id: 6,
-    category: 'academique',
-    title: 'Scoutify',
-    image: '/projects/scoutify.png',
-    description: 'Développement de la plateforme Scoutify pour la génération de CV sportifs via un formulaire, avec un espace d’administration pour la gestion des logos, badges et l’export PDF.',
-    tags: ['Next.js', 'Tailwind CSS', 'SQLite', 'API REST'],
-    demo: 'https://workshop-m2.vercel.app/',
-    repo: "https://github.com/AeonPSR/workshop-m2",
-    school: 'EEMI',
+    id: 8,
+    category: 'professionnel',
+    title: 'Plateforme Syndico',
+    image: '/projects/syndico.png',
+    description: 'Développement en équipe d’une plateforme de gestion financière et administrative des copropriétaires d’un immeuble.',
+    tags: ["Next.js", "Django", "Python"],
+    repo: "https://github.com/Omargazzah02/syndico",
+    company: 'Code Time',
   },
-
 
   {
     id: 7,
@@ -89,14 +88,15 @@ const allProjects = [
   },
 
   {
-    id: 8,
-    category: 'professionnel',
-    title: 'Plateforme Syndico',
-    image: '/projects/syndico.png',
-    description: 'Développement en équipe d’une plateforme de gestion financière et administrative des copropriétaires d’un immeuble.',
-    tags: ["Next.js", "Django", "Python"],
-    repo: "https://github.com/Omargazzah02/syndico",
-    company: 'Code Time',
+    id: 6,
+    category: 'academique',
+    title: 'Scoutify',
+    image: '/projects/scoutify.png',
+    description: 'Développement de la plateforme Scoutify pour la génération de CV sportifs via un formulaire, avec un espace d’administration pour la gestion des logos, badges et l’export PDF.',
+    tags: ['Next.js', 'Tailwind CSS', 'SQLite', 'API REST'],
+    demo: 'https://workshop-m2.vercel.app/',
+    repo: "https://github.com/AeonPSR/workshop-m2",
+    school: 'EEMI',
   },
 
   {
@@ -311,10 +311,10 @@ export function Projects() {
           </div>
 
           {filteredProjects.length > INITIAL_COUNT && (
-            <button className='rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90'
+            <button className='rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 flex items-center gap-1 hover:cursor-pointer'
               onClick={handleToggle}
             >
-              {isAllVisible ? 'Afficher moins' : 'Afficher plus'}
+              {isAllVisible ? 'Afficher moins' : 'Afficher plus'}  {isAllVisible ? (<ChevronUp className="h-4 w-4" />) : (<ChevronDown className="h-4 w-4" />)}
             </button>
           )}
         </div>
