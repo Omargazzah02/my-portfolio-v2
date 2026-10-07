@@ -6,13 +6,13 @@ export function Hero() {
     <section className="relative overflow-hidden">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
         <div className="flex flex-col items-start gap-6">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 font-mono text-xs text-muted-foreground">
+        {/*   <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 font-mono text-xs text-muted-foreground">
                 <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/70 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
             Disponible immédiatement pour un CDI
-          </span>
+          </span> */}
 
           <div className="space-y-3">
             <p className="font-mono text-sm text-muted-foreground">Bonjour, je suis</p>
